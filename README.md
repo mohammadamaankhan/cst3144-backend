@@ -1,12 +1,16 @@
 # After-School Lessons App - Backend
 
-Express.js REST API for managing after-school lessons and orders.
+This is the backend API for my CST3144 coursework project - an after-school lessons booking system built with Express.js and MongoDB.
+
+**Student**: Mohammad Amaan Khan (M00986493)  
+**Email**: MK2310@live.mdx.ac.uk  
+**Module**: CST3144 - Full Stack Development
 
 ## Tech Stack
 
-- **Runtime**: Node.js
-- **Framework**: Express.js
-- **Database**: MongoDB Atlas (native driver)
+- **Runtime**: Node.js 20.18.0
+- **Framework**: Express.js 5.x
+- **Database**: MongoDB Atlas (native MongoDB driver)
 - **Deployment**: Render.com
 
 ## API Endpoints
@@ -41,17 +45,23 @@ npm start
 
 Server will run on `http://localhost:3000`
 
-## Deployment
+## Live Deployment
 
-Deployed on Render.com at: **https://cst3144-backend-f7yf.onrender.com**
+My backend is deployed on Render.com and fully functional!
 
-### Live API Endpoints:
-- GET https://cst3144-backend-f7yf.onrender.com/lessons
-- GET https://cst3144-backend-f7yf.onrender.com/search?q=math
-- POST https://cst3144-backend-f7yf.onrender.com/orders
-- PUT https://cst3144-backend-f7yf.onrender.com/lessons/:id
+**Live URL**: https://cst3144-backend-f7yf.onrender.com
 
-## GitHub Repository
+### Test the API:
+You can test these endpoints directly in your browser or Postman:
 
-Repository: https://github.com/mohammadamaankhan/cst3144-backend
+- **GET** https://cst3144-backend-f7yf.onrender.com/lessons - Get all available lessons
+- **GET** https://cst3144-backend-f7yf.onrender.com/search?q=math - Search for math lessons
+- **POST** https://cst3144-backend-f7yf.onrender.com/orders - Create a new order
+- **PUT** https://cst3144-backend-f7yf.onrender.com/lessons/:id - Update lesson availability
+
+## Source Code
+
+**GitHub Repository**: https://github.com/mohammadamaankhan/cst3144-backend
+
+The repository contains all the source code with 10+ commits showing the development progression.
 
