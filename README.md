@@ -3,8 +3,9 @@
 This is the backend API for my CST3144 coursework project - an after-school lessons booking system built with Express.js and MongoDB.
 
 **Student**: Mohammad Amaan Khan (M00986493)  
-**Email**: MK2310@live.mdx.ac.uk  
-**Module**: CST3144 - Full Stack Development
+**Email**: mk2310@live.mdx.ac.uk  
+**Module**: CST3144 - Full Stack Development  
+**Lecturer**: Dr. Chinnu Mary George
 
 ## Tech Stack
 
