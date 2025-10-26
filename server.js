@@ -16,19 +16,16 @@ const DB_NAME = 'afterschool';
 
 let db;
 
-// Connect to MongoDB with proper TLS/SSL options for cloud deployment
+// Connect to MongoDB Atlas (mongodb+srv handles SSL automatically)
 async function connectToDatabase() {
   try {
-    const client = await MongoClient.connect(MONGODB_URI, {
-      tls: true,
-      tlsAllowInvalidCertificates: false,
-      serverSelectionTimeoutMS: 30000,
-      socketTimeoutMS: 45000,
-    });
+    const client = await MongoClient.connect(MONGODB_URI);
     db = client.db(DB_NAME);
     console.log('Connected to MongoDB successfully');
+    console.log(`Database: ${DB_NAME}`);
   } catch (error) {
     console.error('MongoDB connection error:', error);
+    console.error('Connection string starts with:', MONGODB_URI.substring(0, 20));
     process.exit(1);
   }
 }
