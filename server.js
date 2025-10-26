@@ -139,16 +139,22 @@ app.put('/lessons/:id', async (req, res) => {
   }
 });
 
-// Root endpoint - API info
+// Root endpoint - API documentation (useful for demo and testing)
 app.get('/', (req, res) => {
   res.json({
-    message: 'After-School Lessons API',
+    message: 'After-School Lessons API - CST3144 Coursework',
+    version: '1.0.0',
+    author: 'Mohammad Amaan Khan',
     endpoints: {
-      'GET /lessons': 'Get all lessons',
-      'GET /search?q={query}': 'Search lessons',
-      'POST /orders': 'Create new order',
-      'PUT /lessons/:id': 'Update lesson spaces',
-      'GET /images/*': 'Get lesson images'
+      'GET /lessons': 'Retrieve all lessons from database',
+      'GET /search?q={query}': 'Search lessons by subject, location, price, or spaces',
+      'POST /orders': 'Create new order (requires: name, phone, lessonIds, spaces)',
+      'PUT /lessons/:id': 'Update lesson spaces to specific value',
+      'GET /images/*': 'Serve lesson images from static directory'
+    },
+    database: {
+      name: DB_NAME,
+      collections: ['lessons', 'orders']
     }
   });
 });
