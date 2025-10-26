@@ -16,10 +16,15 @@ const DB_NAME = 'afterschool';
 
 let db;
 
-// Connect to MongoDB
+// Connect to MongoDB with proper TLS/SSL options for cloud deployment
 async function connectToDatabase() {
   try {
-    const client = await MongoClient.connect(MONGODB_URI);
+    const client = await MongoClient.connect(MONGODB_URI, {
+      tls: true,
+      tlsAllowInvalidCertificates: false,
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 45000,
+    });
     db = client.db(DB_NAME);
     console.log('Connected to MongoDB successfully');
   } catch (error) {
