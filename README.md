@@ -43,9 +43,9 @@ Server will run on `http://localhost:3000`
 
 ## Deployment
 
-Deployed on Render.com at: `[Will be added after deployment]`
+Deployed on Render.com at: `[To be deployed]`
 
 ## GitHub Repository
 
-Repository: `[Will be added after GitHub setup]`
+Repository: https://github.com/mohammadamaankhan/cst3144-backend
 
