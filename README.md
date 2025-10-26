@@ -43,7 +43,13 @@ Server will run on `http://localhost:3000`
 
 ## Deployment
 
-Deployed on Render.com at: `[To be deployed]`
+Deployed on Render.com at: **https://cst3144-backend-f7yf.onrender.com**
+
+### Live API Endpoints:
+- GET https://cst3144-backend-f7yf.onrender.com/lessons
+- GET https://cst3144-backend-f7yf.onrender.com/search?q=math
+- POST https://cst3144-backend-f7yf.onrender.com/orders
+- PUT https://cst3144-backend-f7yf.onrender.com/lessons/:id
 
 ## GitHub Repository
 
